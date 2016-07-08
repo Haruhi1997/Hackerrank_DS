@@ -1,0 +1,21 @@
+/*
+  Insert Node at the end of a linked list 
+  head pointer input could be NULL as well for empty list
+  Node is defined as 
+  class Node {
+     int data;
+     Node next;
+  }
+*/
+Node Insert(Node head,int d) {Node q=new Node();q.data=d;
+   if(head==null){head.data=d;head.next=null;}
+                                 else {
+                                     Node last=head;
+                                 while(last.next!=null){last=last.next;}
+last.next=q;
+                                       q.next=null;}
+                                 return head;
+                                 // This is a "method-only" submission. 
+// You only need to complete this method. 
+  
+}
