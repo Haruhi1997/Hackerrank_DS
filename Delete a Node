@@ -1,0 +1,12 @@
+ 
+
+Node Delete(Node head, int position) {
+if(head==null){return null;}
+    else{int j=0;Node prev=head;
+        if(position==0){head=head.next;}
+        while(j<position-1){prev=prev.next;j++;}
+         prev.next=prev.next.next;
+        }
+return head;
+}
+
