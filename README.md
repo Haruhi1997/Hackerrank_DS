@@ -1,1 +1,1 @@
-# Hackerrank_DS
+# Hackerrank Data Structures
